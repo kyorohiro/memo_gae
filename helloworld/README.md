@@ -1,3 +1,4 @@
+
 [setup 1]
 $ docker-machine create -d virtualbox dev
 $ eval "$(docker-machine env dev)"
@@ -21,3 +22,7 @@ $ gcloud preview app deploy app.yaml --promote
 
 [local preview]
 $ dev_appserver.py --custom_entrypoint "dart bin/server.dart {port}" app.yaml
+
+
+lsof -i :8080
+kill -9 ID
