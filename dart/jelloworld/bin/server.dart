@@ -1,9 +1,12 @@
 import 'dart:io';
 import 'package:appengine/appengine.dart' as engine;
 import 'package:gcloud/db.dart' as gdb;
+import 'package:gcloud/http.dart' as http;
+import 'package:gcloud/common.dart' as comm;
+import 'package:gcloud/pubsub.dart' as pubsub;
+import 'package:gcloud/service_scope.dart' as scope;
 import 'package:gcloud/datastore.dart' as dst;
 import 'dart:convert';
-
 @gdb.Kind()
 class ItemsRoot extends gdb.Model {}
 
@@ -29,6 +32,8 @@ class Item extends gdb.Model {
 gdb.Key get itemsRoot => engine.context.services.db.emptyKey.append(ItemsRoot, id: 1);
 
 main(List<String> args) {
+//  http.authClientService
+//pubsub.pubsubService.createTopic(name)
   engine.runAppEngine((HttpRequest request) async {
     switch (request.uri.path) {
       case "/item":
