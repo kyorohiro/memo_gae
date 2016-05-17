@@ -14,3 +14,9 @@ http://research.google.com/archive/bigtable.html
 
 #### MapReduce/Bigtable for Distributed Optimization
 http://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/36948.pdf
+
+#### 価格
+https://cloud.google.com/appengine/pricing
+
+
+
