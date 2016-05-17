@@ -1,5 +1,6 @@
-# Memo GAE With Go
+# Ref
 
-GAEを利用して、アレコレサービスを手軽に立ち上げるようになろう。
-そう、思いたってから書き始めたメモ。
+
+### HBase
+Bigtable の クローン。Open souce で公開されている
 
